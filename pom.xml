@@ -14,6 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.4.1</spring-boot.version>
+        <cola.component.version>1.0.0</cola.component.version>
     </properties>
 
     <modules>
@@ -70,6 +71,29 @@
                 <version>2.1.4</version>
                 <type>jar</type>
             </dependency>
+
+            <!--COLA Components-->
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-domain-starter</artifactId>
+                <version>${cola.component.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-exception</artifactId>
+                <version>${cola.component.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-dto</artifactId>
+                <version>${cola.component.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-component-catchlog-starter</artifactId>
+                <version>${cola.component.version}</version>
+            </dependency>
+            <!--COLA Components End-->
         </dependencies>
     </dependencyManagement>
 
